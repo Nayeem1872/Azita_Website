@@ -22,7 +22,7 @@ export default function Navbar() {
         <div className="self-stretch my-auto">AZITA</div>
       </div>
 
-      <div className="p-1 bg-white/10 rounded-full shadow-[0px_30px_60px_0px_rgba(0,0,0,0.25)] outline outline-1 outline-offset-[-1px] outline-white/30 backdrop-blur-[20px] inline-flex justify-center items-center gap-1">
+      <div className="p-1 bg-white/10 rounded-full shadow-[0px_30px_60px_0px_rgba(0,0,0,0.25)] outline outline-offset-[-1px] outline-white/30 backdrop-blur-[20px] inline-flex justify-center items-center gap-1">
         {navLinks.map((link) => (
           <a
             key={link.name}
