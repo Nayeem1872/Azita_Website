@@ -76,7 +76,7 @@ export const ServicesSection: React.FC = () => {
       role="main"
     >
       <div className="flex flex-col items-start gap-10 w-full">
-        <header className="flex flex-col items-start gap-4 w-full pl-[100px] pr-5 max-md:pl-[50px] max-sm:gap-3 max-sm:pl-5">
+        <header className="flex flex-col items-start gap-4 w-full max-w-[1440px] mx-auto pl-[100px] pr-5 max-md:pl-[50px] max-sm:gap-3 max-sm:pl-5">
           <h1
             id="services-heading"
             className="text-[#3C3C3C] text-8xl font-normal leading-[120px] max-md:text-7xl max-sm:text-5xl"

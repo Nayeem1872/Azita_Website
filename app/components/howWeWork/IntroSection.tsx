@@ -14,7 +14,7 @@ export const IntroSection: React.FC = () => {
       className="w-full flex flex-col items-center justify-center py-40 px-5 box-border bg-gradient-to-b from-[#6a696e] to-black"
       aria-labelledby="intro-heading"
     >
-      <div className="max-w-6xl text-center">
+      <div className="max-w-6xl text-start">
         <h1
           id="intro-heading"
           className="text-4xl sm:text-5xl md:text-6xl font-medium leading-tight md:leading-snug text-white"

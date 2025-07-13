@@ -10,9 +10,9 @@ const StatsCards = () => {
   return (
     <div className="max-w-[1440px] mx-auto">
       <section
-        className={`self-center flex justify-between gap-x-[241px] items-end w-full text-white font-normal flex-wrap mt-[61px] max-md:max-w-full max-md:mt-10`}
+        className={`self-center flex justify-between gap-x-[241px] items-end w-full text-white font-normal flex-wrap mt-[61px] max-md:max-w-full max-md:mt-10 max-md:flex-col max-md:items-center`}
       >
-        <article className="justify-center items-stretch border shadow-[0px_30px_60px_0px_rgba(0,0,0,0.25)] backdrop-blur-[20px] flex min-w-60 flex-col w-[253px] p-5 rounded-[15px] border-solid border-[rgba(255,255,255,0.40)] hover:border-[rgba(255,255,255,0.6)] transition-colors">
+        <article className="justify-center items-stretch border shadow-[0px_30px_60px_0px_rgba(0,0,0,0.25)] backdrop-blur-[20px] flex min-w-60 flex-col w-[253px] p-5 rounded-[15px] border-solid border-[rgba(255,255,255,0.40)] hover:border-[rgba(255,255,255,0.6)] transition-colors max-md:w-full max-md:mb-8">
           <div className="max-w-full w-[213px]">
             <div className="text-[32px]">40+</div>
             <div className="text-base mt-1">Projects Launched Successfully</div>
@@ -24,7 +24,7 @@ const StatsCards = () => {
           />
         </article>
 
-        <div className="flex items-center justify-end gap-4">
+        <div className="flex items-center justify-end gap-4 max-md:justify-center max-md:mb-8">
           <a
             href="https://www.behance.net"
             target="_blank"
@@ -67,7 +67,7 @@ const StatsCards = () => {
           </a>
         </div>
 
-        <article className="justify-center items-stretch border shadow-[0px_30px_60px_0px_rgba(0,0,0,0.25)] backdrop-blur-[20px] flex min-w-60 flex-col w-[271px] p-5 rounded-[15px] border-solid border-[rgba(255,255,255,0.40)] hover:border-[rgba(255,255,255,0.6)] transition-colors">
+        <article className="justify-center items-stretch border shadow-[0px_30px_60px_0px_rgba(0,0,0,0.25)] backdrop-blur-[20px] flex min-w-60 flex-col w-[271px] p-5 rounded-[15px] border-solid border-[rgba(255,255,255,0.40)] hover:border-[rgba(255,255,255,0.6)] transition-colors max-md:w-full">
           <div className="max-w-full w-[231px]">
             <div className="text-[32px]">15+</div>
             <div className="text-base mt-1">

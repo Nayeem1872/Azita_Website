@@ -36,39 +36,45 @@ const processSteps = [
 export const HowWeWork: React.FC = () => {
   return (
     <>
-      <section
-        className="flex w-full  flex-col  bg-gradient-to-b from-white to-[#6a696e] items-start gap-16 box-border mx-auto my-0 px-[100px] py-20 max-md:gap-12 max-md:px-10 max-md:py-[60px] max-sm:gap-8 max-sm:px-5 max-sm:py-10"
-        aria-labelledby="how-we-work-title"
-      >
-        <header className="flex w-full max-w-[1440px] flex-col items-start gap-4">
-          <h1
-            id="how-we-work-title"
-            className="w-full text-[#3C3C3C] text-8xl font-normal leading-[120px] max-md:text-7xl max-sm:text-5xl"
-          >
-            How We Work
-          </h1>
-          <p className="w-full text-[#3C3C3C] text-xl font-normal leading-[31px] max-md:text-lg max-sm:text-base">
-            We combine creativity, strategy, and technology to deliver
-            exceptional digital experiences—tailored to your brand's needs.
-          </p>
-        </header>
-
-        <div
-          className="flex items-center gap-8 w-full max-md:flex-col max-md:gap-6 max-sm:gap-4 "
-          role="group"
-          aria-label="Our work process"
+      <div className="bg-gradient-to-b from-white to-[#6a696e]">
+        <section
+          className="flex w-full  flex-col    items-start gap-16  max-w-[1440px] box-border mx-auto my-0 px-[100px] py-20 max-md:gap-12 max-md:px-10 max-md:py-[60px] max-sm:gap-8 max-sm:px-5 max-sm:py-10"
+          aria-labelledby="how-we-work-title"
         >
-          {processSteps.map((step) => (
-            <Card
-              key={step.number}
-              number={step.number}
-              title={step.title}
-              description={step.description}
-              icon={step.icon}
-            />
-          ))}
-        </div>
-      </section>
+          <header className="flex w-full max-w-[1440px] flex-col items-start gap-4">
+            <h1
+              id="how-we-work-title"
+              className="w-full text-[#3C3C3C] text-8xl font-normal leading-[120px] max-md:text-7xl max-sm:text-5xl"
+            >
+              How We Work
+            </h1>
+            <p className="w-full text-[#3C3C3C] text-xl font-normal leading-[31px] max-md:text-lg max-sm:text-base">
+              We combine creativity, strategy, and technology to deliver
+              exceptional digital experiences—tailored to your brand's needs.
+            </p>
+          </header>
+
+          <div
+            className="flex items-center gap-8 w-full max-md:flex-col max-md:gap-6 max-sm:gap-4 "
+            role="group"
+            aria-label="Our work process"
+          >
+            {processSteps.map((step) => (
+              <div
+                key={step.number}
+                className="w-[286px] shrink-0 max-md:w-full"
+              >
+                <Card
+                  number={step.number}
+                  title={step.title}
+                  description={step.description}
+                  icon={step.icon}
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
       <IntroSection />
     </>
   );

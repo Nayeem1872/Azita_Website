@@ -20,12 +20,13 @@ export const HeroContent: React.FC<HeroContentProps> = ({ className = "" }) => {
         </p>
       </section>
 
-      <div className="self-center flex items-center gap-5 text-[16px] sm:text-xl font-bold leading-none justify-center mt-20 max-md:mt-10">
+      <div className="self-center flex items-center gap-3 sm:gap-5 text-[16px] sm:text-xl font-bold leading-none justify-center mt-20 max-md:flex max-md:mt-10">
         <button className="bg-white self-stretch flex min-h-14 items-center text-[rgba(25,24,30,1)] justify-center my-auto px-[24px] py-[16px] sm:px-[60px] sm:py-[18px] rounded-[30px] max-md:px-5 hover:bg-gray-100 transition-colors">
           <span className="self-stretch my-auto">See projects</span>
         </button>
 
-        <button className="border self-stretch flex min-w-60 min-h-14 items-center cursor-pointer text-white justify-center my-auto px-[24px] py-[16px]  sm:px-[60px] sm:py-[18px] rounded-[30px] border-white border-solid max-md:px-5 hover:bg-white hover:text-black transition-colors">
+        {/* The "min-w-60" class has been removed from this button */}
+        <button className="border self-stretch flex min-h-14 items-center cursor-pointer text-white justify-center my-auto px-[24px] py-[16px]  sm:px-[60px] sm:py-[18px] rounded-[30px] border-white border-solid max-md:px-5 hover:bg-white hover:text-black transition-colors">
           <span className="self-stretch my-auto">Discuss a project</span>
         </button>
       </div>
