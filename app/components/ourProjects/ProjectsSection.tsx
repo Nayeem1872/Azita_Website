@@ -56,7 +56,7 @@ const projects: Project[] = [
 
 export const ProjectsSection: React.FC = () => {
   return (
-    <main className="flex flex-col items-stretch pt-[49px] pb-[173px] max-md:pb-[100px]">
+    <main className="flex flex-col items-stretch max-w-[1440px] mx-auto pt-[49px] pb-[173px] max-md:pb-[100px]">
       <header className="text-[rgba(60,60,60,1)] font-normal gap-4 ml-[100px] max-md:max-w-full">
         <h1 className="text-8xl leading-none max-md:max-w-full max-md:text-[40px]">
           Our Projects
@@ -90,68 +90,20 @@ export const ProjectsSection: React.FC = () => {
       <section className="w-full mt-[30px] max-md:max-w-full">
         <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
           <div className="w-6/12 max-md:w-full max-md:ml-0">
-            <article className="flex flex-col relative min-h-[1021px] grow items-stretch text-[rgba(60,60,60,1)] pt-[100px] max-md:max-w-full max-md:mt-[30px]">
-              <img
-                src={projects[2].imageUrl}
-                alt={`${projects[2].title} project showcase`}
-                className="absolute h-full w-full object-cover inset-0"
-              />
-              <div className="relative self-center flex w-[479px] max-w-full flex-col items-stretch">
-                <header className="min-h-[104px] w-full max-md:max-w-full">
-                  <h2 className="text-5xl font-medium leading-[1.2] max-md:text-[40px]">
-                    {projects[2].title}
-                  </h2>
-                  <p className="text-2xl font-normal mt-2 max-md:max-w-full">
-                    {projects[2].description}
-                  </p>
-                </header>
-                <button
-                  className="border flex items-center gap-4 text-base font-normal mt-10 px-[30px] py-4 rounded-[60px] border-[rgba(60,60,60,1)] border-solid max-md:px-5 transition-all duration-300 hover:bg-opacity-10 hover:bg-current focus:outline-none focus:ring-2 focus:ring-current focus:ring-opacity-50"
-                  aria-label={`Learn more about ${projects[2].title} project`}
-                >
-                  <span className="self-stretch my-auto">Learn more</span>
-                </button>
-              </div>
-              {projects[2].hasBottomImage && (
-                <img
-                  src={projects[2].bottomImageUrl}
-                  alt={`${projects[2].title} additional showcase`}
-                  className={`${projects[2].bottomImageAspect} object-contain w-full mt-[142px] max-md:max-w-full max-md:mt-10`}
-                />
-              )}
-            </article>
+            <ProjectCard
+              title={projects[2].title}
+              description={projects[2].description}
+              imageUrl={projects[2].imageUrl}
+              isWhiteText={projects[2].isWhiteText}
+            />
           </div>
           <div className="w-6/12 ml-5 max-md:w-full max-md:ml-0">
-            <article className="flex flex-col relative min-h-[1021px] grow items-stretch text-[rgba(60,60,60,1)] pt-[100px] max-md:max-w-full max-md:mt-[30px]">
-              <img
-                src={projects[3].imageUrl}
-                alt={`${projects[3].title} project showcase`}
-                className="absolute h-full w-full object-cover inset-0"
-              />
-              <div className="relative self-center flex w-[479px] max-w-full flex-col items-stretch">
-                <header className="min-h-[104px] w-full max-md:max-w-full">
-                  <h2 className="text-5xl font-medium leading-[1.2] max-md:text-[40px]">
-                    {projects[3].title}
-                  </h2>
-                  <p className="text-2xl font-normal mt-2 max-md:max-w-full">
-                    {projects[3].description}
-                  </p>
-                </header>
-                <button
-                  className="border flex items-center gap-4 text-base font-normal mt-10 px-[30px] py-4 rounded-[60px] border-[rgba(60,60,60,1)] border-solid max-md:px-5 transition-all duration-300 hover:bg-opacity-10 hover:bg-current focus:outline-none focus:ring-2 focus:ring-current focus:ring-opacity-50"
-                  aria-label={`Learn more about ${projects[3].title} project`}
-                >
-                  <span className="self-stretch my-auto">Learn more</span>
-                </button>
-              </div>
-              {projects[3].hasBottomImage && (
-                <img
-                  src={projects[3].bottomImageUrl}
-                  alt={`${projects[3].title} additional showcase`}
-                  className={`${projects[3].bottomImageAspect} object-contain w-full mt-[77px] max-md:max-w-full max-md:mt-10`}
-                />
-              )}
-            </article>
+            <ProjectCard
+              title={projects[3].title}
+              description={projects[3].description}
+              imageUrl={projects[3].imageUrl}
+              isWhiteText={projects[3].isWhiteText}
+            />
           </div>
         </div>
       </section>

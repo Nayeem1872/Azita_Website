@@ -1,20 +1,14 @@
 import React from "react";
 
-const teamImages = [
-  "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  "https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-];
+const teamImages = ["/Assets/home page/text recatangle.png"];
 
 export const IntroSection: React.FC = () => {
   return (
     <section
-      className="w-full flex flex-col items-center justify-center py-40 px-5 box-border bg-gradient-to-b from-[#6a696e] to-black"
+      className="w-full flex flex-col items-center justify-center py-40  box-border bg-gradient-to-b from-[#6a696e] to-black"
       aria-labelledby="intro-heading"
     >
-      <div className="max-w-6xl text-start">
+      <div className="max-w-[1220px] text-start">
         <h1
           id="intro-heading"
           className="text-4xl sm:text-5xl md:text-6xl font-medium leading-tight md:leading-snug text-white"
@@ -26,16 +20,13 @@ export const IntroSection: React.FC = () => {
             talented and dedicated designers
           </span>{" "}
           <div className="inline-flex items-center align-middle bg-white/20 backdrop-blur-sm rounded-full p-2 mx-2 -mb-2 sm:-mb-1">
-            {teamImages.map((src, index) => (
-              <img
-                key={index}
-                className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-2 border-gray-800 -ml-4 md:-ml-6 first:ml-0"
-                src={src}
-                alt={`Team member ${index + 1}`}
-              />
-            ))}
+            <img
+              className="w-full md:h-16 rounded-full object-cover  -ml-4 md:-ml-6 first:ml-0"
+              src="/Assets/home page/text recatangle.png"
+              alt={`Team member`}
+            />
           </div>
-          <span>committed to delivering exceptional designs.</span>
+          <span>committed to delivering designs.</span>
         </h1>
         <div className="flex justify-center mt-20">
           <div className="grid grid-cols-2 grid-rows-2 w-12 h-12 gap-2">
